@@ -6,7 +6,7 @@ var app = {
         } else {
             alert(title ? (title + ": " + message) : message);
         }
-    }
+    },
 
     findByName: function() {
         console.log('findByName');
