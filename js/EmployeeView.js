@@ -18,13 +18,13 @@ var EmployeeView = function(employee){
 				$('.employee-image', this.el).attr('src', "data:image/jpeg;base64," + imageData);
 			},
 			function(){
-				app.showAlert('Error taking picture', 'Error');
+				alert('Error taking picture');
+				//app.showAlert('Error taking picture', 'Error');
 			},
-			options
-		);
+			options);
 
 		return false;
-	}
+	};
 
 	this.addToContacts = function(event){
 		event.preventDefault();
@@ -42,7 +42,7 @@ var EmployeeView = function(employee){
 		contact.phoneNumbers = phoneNumbers;
 		contact.save();
 		return false;
-	}
+	};
 
 	this.addLocation = function(event){
 		event.preventDefault();
