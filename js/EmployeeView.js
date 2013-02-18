@@ -16,7 +16,7 @@ var EmployeeView = function(employee){
 
 		navigator.camera.getPicture(
 			function(imageData){
-				$('.employee-image', this.el).attr('src', "data:image/jpeg;base64," + imageData);
+				$('#image', this.el).attr('src', "data:image/jpeg;base64," + imageData);
 			},
 			function(){
 				alert('Error taking picture');
